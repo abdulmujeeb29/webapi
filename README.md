@@ -12,18 +12,22 @@ check this by using the following command:***
 ```python --version```
 
 
-### 1. First let's clone the repo , open your terminal and  navigate to the directory you wish to store the project and run the following command below :
+### 1. Clone the repo
+First let's clone the repo , open your terminal and  navigate to the directory you wish to store the project and run the following command below :
 
 `git clone https://github.com/abdulmujeeb29/webapi.git`
 
-### 2. Once you've cloned the repository, navigate into the repository.
+### 2. Navigate into  repository
+Once you've cloned the repository, navigate into the repository.
 
-### 3. Create a virtual environment in the repo and activate it using the following commands:
+### 3. virtual enironment
+Create a virtual environment in the repo and activate it using the following commands:
 
 ```pipenv install django``` this command creates a virtual environment and install django in it  
 ```pipenv shell```  then run this command to activate the virtual environment 
 
-### 4. Once you've activated your virtual environment install your python packages used in the project by running:
+### 4. Install requirements
+Once you've activated your virtual environment install your python packages used in the project by running:
 
 ```
 pip install -r requirements.txt
