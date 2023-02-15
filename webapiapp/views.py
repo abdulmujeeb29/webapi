@@ -4,10 +4,14 @@ from .serializer import *
 from django.contrib.auth.models import User,auth 
 # Create your views here.
 
-class buis_create(generics.CreateAPIView):
+class create_buisness(generics.CreateAPIView):
     queryset = buisnessProfile.objects.all()
     serializer_class = buisSerializer
 
-class buis_get(generics.ListAPIView):
+class get_buisness(generics.ListAPIView):
+    queryset = buisnessProfile.objects.all()
+    serializer_class = buisSerializer
+
+class get_buisness_by_id(generics.RetrieveAPIView):
     queryset = buisnessProfile.objects.all()
     serializer_class = buisSerializer
