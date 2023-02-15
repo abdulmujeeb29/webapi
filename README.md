@@ -1,4 +1,4 @@
---Technology used in creating the web api:
+#Technology used in creating the web api:
 
 -Django Rest framework
 Django REST framework (DRF) is a powerful and flexible toolkit for building Web APIs. Its main benefit is that it makes serialization much easier.
