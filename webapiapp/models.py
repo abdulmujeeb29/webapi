@@ -3,7 +3,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import RegexValidator
 from django.core.exceptions import ValidationError
 # from email_validator import validate_email
-from validate_email import validate_email
+
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -55,7 +55,7 @@ class buisnessProfile(models.Model):
     buisness_phone= PhoneNumberField(validators=[phone_number])
     email =models.EmailField(null=True)
     #buisness_phone= models.IntegerField(validators=[valid_phonenumber_format],blank=True,null=True)
-    buisness_description = models.CharField(max_length=1000,blank=True)
+    buisness_description = models.CharField(max_length=250,blank=True)
     buisness_images = models.FileField(upload_to ='files',blank=True,null=True)
     other_details =models.CharField(max_length=250,blank=True)
     
